@@ -13,7 +13,8 @@ def main():
 
     # こうかとん画像を読込む
     kk_img = pg.image.load("ex01/fig/3.png")
-    kk_img = pg.transform.flip(True, False)
+    kk_img = pg.transform.flip(kk_img, True, False)
+    kk_imgs = [kk_img, pg.transform.rotozoom(kk_img, 10, 1.0)]
 
     tmr = 0
 
