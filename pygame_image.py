@@ -26,6 +26,9 @@ def main():
         tmr += 1
         screen.blit(bg_img, [0, 0])
 
+        # こうかとん画像を表示
+        screen.blit(kk_imgs[tmr%2], [300, 200])
+
         pg.display.update()
         clock.tick(100)
 
